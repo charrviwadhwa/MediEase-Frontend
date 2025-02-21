@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };
 
         // Sending POST request to backend
-        const response = await fetch('https://mediease-backend.onrender.com', {
+        const response = await fetch('https://mediease-backend.onrender.com/api/auth', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 };
 
                 // Sending POST request to backend
-                const response = await fetch('https://mediease-backend.onrender.com', {
+                const response = await fetch('https://mediease-backend.onrender.com/api/auth', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

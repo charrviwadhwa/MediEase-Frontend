@@ -88,7 +88,7 @@ async function getShops() {
     console.log("Requesting shops for:", data);
 
     try {
-        const response = await fetch('https://mediease-backend.onrender.com', {
+        const response = await fetch('https://mediease-backend.onrender.com/api/shops', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data),
@@ -140,7 +140,7 @@ document.getElementById('confirmPurchase').addEventListener('click', async () =>
     console.log(data);
 
     // Sending POST request to backend
-    const response = await fetch('http://127.0.0.1:8000/api/buy', {
+    const response = await fetch('https://mediease-backend.onrender.com/api/buy', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

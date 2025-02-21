@@ -27,7 +27,7 @@ async function getMedicines() {
     const data = { request_type: "get_all_med" };
 
     try {
-        const response = await fetch("hhttps://mediease-backend.onrender.com", {
+        const response = await fetch("hhttps://mediease-backend.onrender.com/api/medicine", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),

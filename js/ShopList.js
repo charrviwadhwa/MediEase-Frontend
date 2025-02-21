@@ -5,7 +5,7 @@ async function getMedicineList() {
         email: localStorage.getItem('email'),
     };
 
-    const response = await fetch('https://mediease-backend.onrender.com', {
+    const response = await fetch('https://mediease-backend.onrender.com/api/shops', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ async function addMedicine(m) {
         },
     };
 
-    const response = await fetch('http://127.0.0.1:8000/api/medicine', {
+    const response = await fetch('https://mediease-backend.onrender.com/api/medicine', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -142,7 +142,7 @@ async function deleteMedicine(id) {
         'id': id,
     };
 
-    const response = await fetch('http://127.0.0.1:8000/api/medicine', {
+    const response = await fetch('https://mediease-backend.onrender.com/api/medicine', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

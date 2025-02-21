@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         try {
             // Sending POST request to backend
-            const response = await fetch('https://mediease-backend.onrender.com/signup', {
+            const response = await fetch('https://mediease-backend.onrender.com/api/auth', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
